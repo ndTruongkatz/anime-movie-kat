@@ -1,0 +1,67 @@
+body {
+    background-color: #263238;
+    font-family: $font-pri;
+    padding: 0;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .col-px-12 {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and(max-width: 1120px) {
+    .grid-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and(max-width: 750px) {
+    .grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.btn {
+    background-color: $color-btn;
+    padding: 3px 16px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 37px;
+    color: $white;
+    &:hover {
+        background-color: #263238;
+        color: $white;
+    }
+    &-login {
+        padding: 0 16px 1px 16px;
+    }
+    &-random {
+        padding: 3px 16px 3px 30px;
+    }
+    &-watch {
+        padding: 3px 16px 3px 30px;
+    }
+}
+
+.btn--before {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 17px;
+        left: 15px;
+        border-top: 5px solid transparent;
+        border-left: 5px solid $white;
+        border-bottom: 5px solid transparent;
+    }
+}

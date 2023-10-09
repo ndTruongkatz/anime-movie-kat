@@ -1,0 +1,166 @@
+.section-main-9-3 {
+    // new úpate
+    .new-update {
+        .new-top {
+            .title-new {
+                color: #eeeeee;
+                font-size: 24px;
+                text-transform: uppercase;
+                .icon-ml-5 {
+                    margin-left: 5px;
+                    font-size: 25px;
+                }
+            }
+            .list-the-loai {
+                display: flex;
+                flex-wrap: wrap;
+                .anime-link {
+                    padding: 15px;
+                    font-size: 14px;
+                    margin: 0 3px;
+                    color: gray;
+                    &.active {
+                        color: $red;
+                    }
+                }
+            }
+        }
+        .new-main {
+            .contai-anime {
+                position: relative;
+                transition: 0.5s;
+                border-radius: 3px;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover img {
+                    opacity: 0.5;
+                    // transform: scale(1.1);
+                }
+                .anime-link {
+                    color: #fff;
+                }
+                img {
+                    border-radius: 3px;
+                    width: 100%;
+                    height: 225px;
+                    transition: all 0.3s;
+                    // &:hover {
+                    //     opacity: 0.5;
+                    // }
+                }
+                .rate {
+                    position: absolute;
+                    padding: 6px 12px;
+                    font-size: 13px;
+                    background: rgba(0, 0, 0, 0.65);
+                    border-radius: 20em;
+                    margin-left: 0.5em;
+                    margin-top: 5px;
+                    cursor: pointer;
+                    color: #f5ec42;
+                    top: 0;
+                }
+                .chapter {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    text-align: center;
+                    width: 40px;
+                    padding-top: 2px;
+                    margin-right: 8px;
+                    height: 40px;
+                    margin-top: 5px;
+                    border-radius: 50%;
+                    background: rgba(183, 28, 28, 0.9);
+                    color: $white;
+                    font-size: 11px;
+                    .chap-number {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+                .name-anime {
+                    font-weight: 500;
+                    align-items: center;
+                    text-align: center;
+                    height: auto;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    display: block;
+                    color: $white;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    text-overflow: ellipsis;
+                }
+                .luot-xem {
+                    align-items: center;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #7d7d7d;
+                    display: block;
+                }
+                .icon-play {
+                    position: absolute;
+                    font-size: 0px;
+                    top: 35%;
+                    left: 50%;
+                    visibility: hidden;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: all 0.3s;
+                }
+                &:hover .icon-play {
+                    opacity: 1;
+                    visibility: visible;
+                    margin-top: 0;
+                }
+                &:hover .icon-p {
+                    font-size: 40px;
+                    transition: all 0.2s;
+                    transform: scale(1.5);
+                }
+            }
+        }
+        .xem-them-new-main {
+            height: 37px;
+            background-color: #161e21;
+            align-items: center;
+            text-align: center;
+            .xem-them {
+                color: $white;
+                line-height: 37px;
+                &:hover {
+                    color: #7d7d7d;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .new-main {
+        .contai-anime {
+            img {
+                height: 320px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .new-main {
+        .contai-anime {
+            img {
+                height: 200px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .section-main-9-3 .new-update .new-top .list-the-loai .anime-link {
+        padding: 8px !important;
+    }
+}

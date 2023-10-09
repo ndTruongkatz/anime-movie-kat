@@ -1,0 +1,128 @@
+.col-edit-3 {
+    .hot-tuan {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 3px;
+        .hot-top {
+            span {
+                color: $white;
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+            .item-link {
+                font-size: 14px;
+                color: #ccc;
+            }
+            .item-link.active {
+                color: $red;
+            }
+        }
+        .bxh {
+            padding: 0;
+            .list-item {
+                margin-bottom: 20px;
+                &:hover .img-hv {
+                    opacity: 0.5;
+                }
+                &:hover .icon-play {
+                    opacity: 1;
+                }
+                &:hover .icon-p {
+                    font-size: 35px;
+                    transition: 0.2s;
+                }
+            }
+        }
+        .contai-item {
+            gap: 8px;
+            .item-link {
+                position: relative;
+                .img-div {
+                    position: relative;
+                    width: 55px;
+                    .number {
+                        font-size: 10px;
+                        font-weight: bold;
+                        position: absolute;
+                        top: -4px;
+                        padding: 0 5px;
+                        min-width: 24px;
+                        height: 23px;
+                        line-height: 23px;
+                        color: black;
+                        border-top-left-radius: 3px;
+                        background-color: $green;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            filter: brightness(60%);
+                            right: -4px;
+                            border-bottom: 4px solid $green;
+                            border-right: 4px solid transparent;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -4px;
+                            border-width: 0 12px 5px;
+                            border-style: solid;
+                            border-color: transparent $green transparent $green;
+                        }
+                    }
+                }
+                .icon-play {
+                    color: $white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 9;
+                    opacity: 0;
+                }
+                // &:hover .icon-play {
+                //     opacity: 1;
+                // }
+            }
+        }
+        .ctn-about {
+            .link-anime {
+                color: $white;
+                line-height: 20px;
+                transition: 0.4s;
+                max-height: 40px;
+                overflow: hidden;
+                font-weight: 400;
+                &:hover {
+                    color: #ccc;
+                }
+            }
+            .about-anime {
+                font-size: 13px;
+                .rate-anime {
+                    color: $green;
+                }
+                .resolution {
+                    width: 2rem;
+                    font-weight: bold;
+                    height: auto;
+                    background-color: $red;
+                    font-size: 10px;
+                    line-height: 24px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+                span {
+                    color: #78909c;
+                }
+                .resolution {
+                    color: $white;
+                }
+                .icon-ccc {
+                    color: #555;
+                }
+            }
+        }
+    }
+}

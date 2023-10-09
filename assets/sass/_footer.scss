@@ -1,0 +1,93 @@
+.footer {
+    .container {
+        background-color: $bg-main;
+        border-radius: 3px;
+        padding: 15px;
+        height: 65px;
+    }
+    .bao-quanh {
+        justify-content: space-between;
+    }
+    .menu-1 {
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            height: 100%;
+        }
+        .logo-link {
+            height: 45px;
+        }
+        .nav {
+            gap: 15px;
+        }
+        .item-link {
+            font-size: 14px;
+            color: $white;
+        }
+    }
+    .social {
+        align-items: center;
+        .menu-social {
+            margin: 0;
+        }
+        .list-item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            .item-link {
+                width: 40px;
+                height: 40px;
+                display: block;
+                background-color: $nav-cl;
+                line-height: 40px;
+                text-align: center;
+                color: #ccc;
+                opacity: 0.5;
+                border-radius: 3px;
+                &:hover {
+                    opacity: 1;
+                    color: $white;
+                }
+            }
+            .on-top {
+                opacity: 1;
+                background-color: $green;
+                color: $white;
+            }
+        }
+    }
+    .bonus-ft {
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        span {
+            display: block;
+            color: #ccc;
+            margin-bottom: 20px;
+            &:first-child {
+                font-size: 13px;
+            }
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        .container {
+            height: auto !important;
+        }
+        .bao-quanh {
+            flex-wrap: wrap;
+        }
+        .logo-link {
+            margin-bottom: 10px;
+        }
+        .social {
+            margin-top: 20px;
+        }
+    }
+}

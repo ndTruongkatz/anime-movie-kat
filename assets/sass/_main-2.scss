@@ -1,0 +1,221 @@
+.section-main-9-3 {
+    .container-main-9-3 {
+        background-color: $bg-main;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 15px;
+    }
+    .col-edit-9 {
+        .img-border-3 {
+            border-radius: 3px;
+            object-fit: cover;
+            height: 455px;
+            max-height: 455px;
+            width: 100%;
+        }
+        .slider-main-anime {
+            .carousel-indicators {
+                z-index: 999;
+            }
+            .carousel-inner {
+                .link-watch-anime {
+                    color: $white;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                .item-link-anime {
+                    color: $white;
+                }
+                .info-anime {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    left: 0;
+                    width: 50%;
+                    bottom: 0;
+                    top: 0;
+                    height: 455px;
+                    max-height: 455px;
+                    color: $white;
+                    padding: 20px;
+                }
+            }
+        }
+        .about-anime {
+            font-size: 13px;
+            .rate-anime {
+                color: $green;
+            }
+            .resolution {
+                width: 2rem;
+                font-weight: bold;
+                height: auto;
+                background-color: $red;
+                font-size: 10px;
+                line-height: 24px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .icon-ccc {
+                color: #ccc;
+            }
+        }
+        .cot-truyen {
+            height: auto;
+            overflow: hidden;
+            display: block;
+            color: #ccc;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            text-overflow: ellipsis;
+        }
+        .studio,
+        .the-loai {
+            font-size: 12px;
+            .icon-gren {
+                color: $green;
+                margin-right: 5px;
+            }
+            .lable-name {
+                font-weight: bold;
+                color: #ccc;
+            }
+            .name-studio,
+            .list-the-loai {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+        .the-loai {
+            .xem-them-div {
+                display: inline-block;
+                // width: 30px;
+                /* height: 15px; */
+                border: 1px solid $green;
+                border-radius: 50px;
+                align-items: center;
+                text-align: center;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: $green;
+                }
+            }
+            .link-xem-them {
+                font-size: 25px;
+                color: $green;
+                line-height: 0;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .col-edit-3 {
+        .anime-random {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 3px;
+            .title-random {
+                color: $white;
+                font-size: 13px;
+            }
+            .about-random {
+                margin-bottom: 15px;
+                font-size: 13px;
+                color: #8ea8b5;
+            }
+        }
+        .hoi-dap-page {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 3px;
+            .title-hoi-dap {
+                color: $white;
+                font-size: 13px;
+            }
+        }
+        .gach-chan {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                bottom: -18px;
+                color: #696969;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 30px;
+                background-color: #b5e745;
+                bottom: -18px;
+                left: 0;
+            }
+        }
+        // anime moi cap nhat
+        .anime-moi-cap-nhat {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 3px;
+            .title-new {
+                text-transform: uppercase;
+                color: $white;
+                font-size: 13px;
+            }
+            .list-anime {
+                ul {
+                    padding: 0;
+                }
+                .list-item {
+                    padding: 5px 6px 5px 5px;
+                    font-size: 13px;
+                    border-width: 0 0 1px;
+                    border-style: solid;
+                    border-color: #171515;
+                    margin-bottom: 0;
+                    &:hover {
+                        border-left: 5px solid #be3232;
+                    }
+                    .item-link {
+                        font-size: 13px;
+                        color: #ce9090;
+                        .name {
+                            display: inline-block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 68%;
+                            vertical-align: middle;
+                            color: #ce9090;
+                        }
+                        .chapter {
+                            display: inline-block;
+                            width: 30%;
+                            text-align: right;
+                            color: #5f5f5f;
+                            font-style: italic;
+                        }
+                    }
+                }
+                .xem-them {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .section-main-9-3 .col-edit-9 .slider-main-anime .carousel-inner .info-anime {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .section-main-9-3 .col-edit-9 .slider-main-anime .carousel-inner .info-anime {
+        width: 90%;
+    }
+}

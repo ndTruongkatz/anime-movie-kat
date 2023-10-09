@@ -1,0 +1,114 @@
+.section-main {
+    .container-main {
+        background-color: $bg-main;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .title__top-anime {
+        position: relative;
+        color: #eee;
+        font-size: 30px;
+        margin-bottom: 15px;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 12rem;
+            left: 0;
+            bottom: -3px;
+            background-color: rgba(204, 19, 19, 0.9);
+        }
+    }
+    .slick-initialized .slick-slide {
+        margin: 0 10px;
+    }
+    .contai-ani {
+        position: relative;
+        transition: 0.5s;
+        border-radius: 3px;
+        overflow: hidden;
+        &:hover img {
+            opacity: 0.5;
+            // transform: scale(1.1);
+        }
+        .anime-link {
+            color: #fff;
+        }
+        img {
+            border-radius: 3px;
+            width: 100%;
+            height: 215px;
+            transition: all 0.3s ease-in-out;
+            // &:hover {
+            //     opacity: 0.5;
+            // }
+        }
+        .rate {
+            position: absolute;
+            padding: 6px 12px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.65);
+            border-radius: 20em;
+            margin-left: 0.5em;
+            margin-top: 5px;
+            cursor: pointer;
+            color: #f5ec42;
+            top: 0;
+        }
+        .chapter {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            width: 40px;
+            padding-top: 2px;
+            margin-right: 8px;
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 50%;
+            background: rgba(183, 28, 28, 0.9);
+            color: $white;
+            font-size: 11px;
+            .chap-number {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .name-anime {
+            position: absolute;
+            bottom: 0;
+            font-weight: 500;
+            padding: 15px;
+            font-size: 13px;
+            // &:hover {
+            //     // opacity: 0;
+            //     // background-color: red;
+            // }
+        }
+        .icon-play {
+            position: absolute;
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            visibility: hidden;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            margin-top: 65px;
+            transition: 0.5s;
+        }
+        &:hover .icon-play {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0;
+        }
+        &:hover .icon-p {
+            transition: all 0.5s;
+            transform: scale(1.3);
+        }
+        &:hover .name-anime {
+            display: none;
+        }
+    }
+}
